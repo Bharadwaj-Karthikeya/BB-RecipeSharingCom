@@ -8,6 +8,7 @@ html {
   font-size: 100%;
 }
 
+
 body {
   background: white;
   font-family: 'Nunito', sans-serif;
@@ -242,6 +243,7 @@ ul {
   display: flex;
   flex-direction: column;
   transition: 0.3s ease-in-out all;
+  
 }
 
 .show-links {
@@ -258,6 +260,7 @@ ul {
   padding: 1rem 0;
   border-top: 1px solid #64748b;
   transition: 0.3s ease-in-out all;
+  gap: 10px;
 }
 
 .nav-link:hover {
@@ -308,11 +311,6 @@ ul {
   }
 }
 
-/*
-=============== 
-Page
-===============
-*/
 
 .page {
   width: 90vw;
@@ -325,11 +323,6 @@ Page
   min-height: calc(100vh - (6rem + 4rem));
 }
 
-/*
-=============== 
-Hero
-===============
-*/
 
 .hero {
   height: 40vh;
@@ -364,11 +357,6 @@ Hero
   }
 }
 
-/*
-=============== 
-Recipes 
-===============
-*/
 
 .recipes-container {
   display: grid;
@@ -478,11 +466,6 @@ Recipes
   }
 }
 
-/*
-=============== 
-Error
-===============
-*/
 
 .error-page {
   text-align: center;
@@ -493,11 +476,7 @@ Error
   font-size: 9rem;
 }
 
-/*
-=============== 
-About Page
-===============
-*/
+
 
 .about-page h2 {
   text-transform: none;
@@ -531,11 +510,6 @@ About Page
   text-align: center;
 }
 
-/*
-=============== 
-Contact Page
-===============
-*/
 
 .contact-form {
   width: 100%;
@@ -555,11 +529,6 @@ Contact Page
   }
 }
 
-/*
-=============== 
-Tags Page
-===============
-*/
 
 .tags-wrapper {
   display: grid;
@@ -601,11 +570,6 @@ Tags Page
   }
 }
 
-/*
-=============== 
-Recipe Template
-===============
-*/
 
 .recipe-hero {
   display: grid;
@@ -705,7 +669,7 @@ Recipe Template
 
 .second-column {
   display: grid;
-  row-gap: 2rem;
+  row-gap: 1.75rem;
 }
 
 .single-ingredient {
@@ -721,11 +685,7 @@ Recipe Template
   text-transform: capitalize;
 }
 
-/*
-=============== 
-Recipe Template
-===============
-*/
+
 
 body {
   font-family: Arial, sans-serif;
@@ -733,7 +693,7 @@ body {
 }
 
 .container {
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 auto;
   padding: 40px;
   background-color: #fff;
@@ -778,8 +738,6 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #45a049;
 }
-
-/*LOGIN PAGE */
 
 .login-container,
 .registration-container {

@@ -4,18 +4,18 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Login</title>
+        <title>Recipe Submit | Foodaholics</title>
         <link rel="stylesheet" href="./css/normalize.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
         <link rel="stylesheet" href="./css/main.css" />
-
+        <link rel="stylesheet" href="./css/add-recipe.css" />
     </head>
     <body>
         <nav class="navbar">
             <div class="nav-center">
                 <div class="nav-header">
                     <a href="index.html" class="nav-logo">
-                        <img src="https://i.ibb.co/xj5RtX8/Foodacholics.png" alt="Foodaholics" style="height: 70px" />
+                        <img src="https://i.ibb.co/xj5RtX8/Foodacholics.png" alt="Foodaholics" style="height: 70px;" />
                     </a>
                 </div>
                 <div class="nav-links">
@@ -27,6 +27,7 @@
                     <a href="login.html" class="nav-link">login </a>
                     <div class="nav-link contact-link">
                         <a href="contact.html" class="btn"> contact </a>
+
                     </div>
                 </div>
             </div>
@@ -42,34 +43,30 @@
             </header>
             <section class="contact-container">
                 <article class="contact-info">
-                    <h3>Want To Get Involve in the goodness of trendy & healthy recipes?</h3>
+                    <h3>Want To Add Your Own Recipes?</h3>
                     <p>
-                        Login to your account for joining in our foodie community - Foodaholics.<br>
-                        We assure you to provide with healthy, tasty and easy to make recipes.
+                        Please feel free to contribute to the community and<br> 
+                        add your own unique and creative recipes.
                     </p>
                     <p>Foodaholics always at your Rescue!</p>
+                    <p>
+                        Healthy, tasty and easy to make recipes will be provided.
+                    </p>
                 </article>
-                <article>
-                    <form class="form contact-form">
-                        <div class="form-row">
-                            <label html="name" class="form-label">Username </label>
-                            <input type="text" name="name" id="name" placeholder="Username" class="form-input" required />
-                        </div>
-                        <div class="form-row">
-                            <label html="password" class="form-label">Password</label>
-                            <input type="password" id="login-password" placeholder="Password" required>
-                        </div>
-                        <div class="form-row">
-                            <a href="#" style="color: #3363ff;">Forgot Password</a>
-                        </div>
-                        <button type="submit" class="btn btn-block">
-                            Login
-                        </button>
-                        <div class="form-row">
-                            <a href="registration.html" style="color: #3363ff;">New User? Register here</a>
-                        </div>
+                <div class="container">
+                    <h3 style="margin-bottom: -30px;">Submit a Recipe</h3>
+                    <form id="recipeForm" >
+                        <label for="recipeName">Recipe Name:</label>
+                        <input type="text" id="recipeName" name="recipeName" required>
+                        <label for="ingredients">Ingredients:</label>
+                        <textarea id="ingredients" name="ingredients" required></textarea>
+                        <label for="instructions">Instructions:</label>
+                        <textarea id="instructions" name="instructions" required></textarea>
+                        <label for="image">Image:</label>
+                        <input type="file" id="image" name="image">
+                        <button type="submit" id="submitBtn">Submit Recipe</button>
                     </form>
-                </article>
+                </div>
             </section>
             <section class="featured-recipes">
                 <h5 class="featured-title">Look At This Awesomesouce!</h5>
